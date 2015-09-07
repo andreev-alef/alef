@@ -7,4 +7,68 @@ and open the template in the editor.
     Created on : 01.09.2015, 11:18:31
     Author     : alef
 */
+@import '../lib/bs/css/bootstrap.min.css';
+@import './fonts.css';
 
+@media screen{
+    body{
+        margin: 0px;
+        background-color: #FFF;
+    }
+    .root{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1500px;
+    }
+    .sticker{
+        position: absolute;
+        display: block;
+        text-decoration: none;
+        color: #000;
+        width: 280px;
+        height: 320px;
+        left: 160px;
+        top: 200px;
+        background-color: #4FB34F;
+        cursor: pointer;
+
+        transition-property: transform;
+        transition-delay: 200ms;
+        -webkit-transition-duration: 400ms;
+        -moz-transition-duration: 400ms;
+        transition-duration: 400ms;
+    }
+    .sticker:nth-child(1){
+        -webkit-transform: rotateZ(-20deg);
+        -moz-transform: rotateZ(-20deg);
+        transform: rotateZ(-30deg);
+        top: 200px;
+    }
+    .sticker:nth-child(2){
+        -webkit-transform: rotateZ(-20deg);
+        -moz-transform: rotateZ(-20deg);
+        transform: rotateZ(20deg);
+        top: 600px;
+    }
+    .sticker:nth-child(3){
+        -webkit-transform: rotateZ(-20deg);
+        -moz-transform: rotateZ(-20deg);
+        transform: rotateZ(70deg);
+        top: 1000px;
+    }
+    .sticker-title{
+        transform: translate(0, 100px);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Open Sans Light';
+        font-size: 50px;
+    }
+    .sticker:focus{
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+}
